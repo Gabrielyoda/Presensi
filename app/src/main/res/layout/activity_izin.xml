@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6e6e6"
+    tools:context=".Activity.Izin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#1976D2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="IZIN"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <EditText
+                android:id="@+id/txtMulai_izin"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textSize="15sp"
+                tools:text="Kamu memilih tanggal"
+                android:focusable="false"/>
+
+            <Button
+                android:id="@+id/btnMulai_izin"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/btn_rounded_primary"
+                android:text="Mulai"
+                android:textColor="@android:color/white"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <EditText
+                android:id="@+id/txtAkhir_izin"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textSize="15sp"
+                tools:text="Kamu memilih tanggal"
+                android:focusable="false"/>
+
+            <Button
+                android:id="@+id/btnAkhir_izin"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/btn_rounded_primary"
+                android:textColor="@android:color/white"
+
+                android:text="Akhir"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <EditText
+                android:id="@+id/txtAlasan"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Masukkan Alasan"
+                android:inputType="textMultiLine"
+                android:lines="5" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+        <Button
+            android:id="@+id/btn_AjukanCuti"
+            android:background="@drawable/btn_rounded_primary"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textColor="@android:color/white"
+            android:text="Ajukan Izin"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
